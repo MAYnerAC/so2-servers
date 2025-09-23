@@ -31,7 +31,7 @@ echo "anahua:Upt2025" | sudo chpasswd
 
 # Permitir login SSH
 sudo sed -i 's/^#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
-sudo sed -i 's/^#PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/sshd_config
+sudo sed -i 's/^PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
 sudo systemctl restart ssh
 
 # Instalar SSH
