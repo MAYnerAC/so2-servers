@@ -6,8 +6,8 @@ Vagrant.configure("2") do |config|
     server.vm.network "public_network", ip: "192.168.0.101"
 
     server.vm.provider "virtualbox" do |vb|
-      vb.memory = 1024
-      vb.cpus = 1
+      vb.memory = 2048
+      vb.cpus = 2
       vb.name = "Servidor01a"
       #vb.customize ["modifyvm", :id, "--nic1", "bridged"]
       # vb.customize ["modifyvm", :id, "--bridgeadapter1", "net0"] # NO enp0s3
@@ -24,8 +24,8 @@ Vagrant.configure("2") do |config|
     server.vm.network "public_network", ip: "192.168.0.102"
 
     server.vm.provider "virtualbox" do |vb|
-      vb.memory = 1024
-      vb.cpus = 1
+      vb.memory = 2048
+      vb.cpus = 2
       vb.name = "Servidor02a"
       #vb.customize ["modifyvm", :id, "--nic1", "bridged"]
       # vb.customize ["modifyvm", :id, "--bridgeadapter1", "net0"]
