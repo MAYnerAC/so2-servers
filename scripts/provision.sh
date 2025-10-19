@@ -9,6 +9,6 @@ echo -e "\n=========================================== Inicio: $(whoami) =======
 bash /vagrant/scripts/config.sh
 
 # Llamar al script docker.sh para instalar Docker
-# bash /vagrant/docker.sh
+# bash /vagrant/scripts/docker.sh
 
 echo -e "=========================================== Final: $(whoami) ===========================================\n"
