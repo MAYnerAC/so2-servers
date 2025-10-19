@@ -14,7 +14,7 @@ Vagrant.configure("2") do |config|
       vb.customize ["modifyvm", :id, "--name", "Servidor01a"]
     end
 
-    server.vm.provision "shell", path: "provision.sh"
+    server.vm.provision "shell", path: "scripts/provision.sh"
   end
 
   # Configuración para Servidor02
@@ -32,7 +32,7 @@ Vagrant.configure("2") do |config|
       vb.customize ["modifyvm", :id, "--name", "Servidor02a"]
     end
 
-    server.vm.provision "shell", path: "provision.sh"
+    server.vm.provision "shell", path: "scripts/provision.sh"
   end
 end
 
